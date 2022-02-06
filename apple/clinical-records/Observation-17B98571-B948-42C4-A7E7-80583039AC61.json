@@ -1,0 +1,54 @@
+{
+  "status" : "final",
+  "category" : {
+    "text" : "Laboratory",
+    "coding" : [
+      {
+        "system" : "http://hl7.org/fhir/observation-category",
+        "display" : "Laboratory",
+        "code" : "laboratory"
+      }
+    ]
+  },
+  "issued" : "2017-01-14T09:46:11Z",
+  "id" : "Tg6L2w4PzAS9l.80CIdqmtCoScqAMvIFiythfX-tjyE1psgEA4knMuR9k.0BBkZqeB",
+  "code" : {
+    "text" : "MCV",
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "display" : "MCV [Entitic volume] by Automated count",
+        "code" : "787-2"
+      }
+    ]
+  },
+  "valueQuantity" : {
+    "code" : "fL",
+    "value" : 79.7,
+    "system" : "http://unitsofmeasure.org",
+    "unit" : "fL"
+  },
+  "subject" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "referenceRange" : [
+    {
+      "low" : {
+        "code" : "fL",
+        "value" : 80,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "fL"
+      },
+      "high" : {
+        "code" : "fL",
+        "value" : 100,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "fL"
+      },
+      "text" : "80.0 - 100.0 fL"
+    }
+  ],
+  "effectiveDateTime" : "2017-01-14T09:15:00Z",
+  "resourceType" : "Observation"
+}

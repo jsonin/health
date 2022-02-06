@@ -1,0 +1,54 @@
+{
+  "status" : "final",
+  "category" : {
+    "text" : "Laboratory",
+    "coding" : [
+      {
+        "system" : "http://hl7.org/fhir/observation-category",
+        "display" : "Laboratory",
+        "code" : "laboratory"
+      }
+    ]
+  },
+  "issued" : "2017-01-14T10:20:54Z",
+  "id" : "T3mHtyd5TVntDOq6Rj4QzV6HlSZT70qyMKh7MgzJXeJ378FSu8yEdKouVa7ZJ8paXB",
+  "code" : {
+    "text" : "BUN",
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "display" : "Urea nitrogen [Mass/volume] in Serum or Plasma",
+        "code" : "3094-0"
+      }
+    ]
+  },
+  "valueQuantity" : {
+    "code" : "mg/dL",
+    "value" : 20,
+    "system" : "http://unitsofmeasure.org",
+    "unit" : "mg/dL"
+  },
+  "subject" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "referenceRange" : [
+    {
+      "low" : {
+        "code" : "mg/dL",
+        "value" : 8,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mg/dL"
+      },
+      "high" : {
+        "code" : "mg/dL",
+        "value" : 25,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mg/dL"
+      },
+      "text" : "8 - 25 mg/dL"
+    }
+  ],
+  "effectiveDateTime" : "2017-01-14T09:15:00Z",
+  "resourceType" : "Observation"
+}

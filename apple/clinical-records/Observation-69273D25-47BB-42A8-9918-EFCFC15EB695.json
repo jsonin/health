@@ -1,0 +1,52 @@
+{
+  "status" : "final",
+  "category" : {
+    "text" : "Vital Signs",
+    "coding" : [
+      {
+        "system" : "http://hl7.org/fhir/observation-category",
+        "display" : "Vital Signs",
+        "code" : "vital-signs"
+      }
+    ]
+  },
+  "valueQuantity" : {
+    "code" : "%",
+    "value" : 99,
+    "system" : "http://unitsofmeasure.org",
+    "unit" : "%"
+  },
+  "id" : "TWHhs8IwKALHuhTGnI1rmqfaSFDIFHVZBUP5Ok9UITDSJG3q-k8EHEFdu57Jm24hUB",
+  "code" : {
+    "text" : "SpO2",
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "display" : "Oxygen saturation in Capillary blood by Oximetry",
+        "code" : "2710-2"
+      },
+      {
+        "system" : "http://loinc.org",
+        "display" : "Oxygen saturation in Arterial blood by Pulse oximetry",
+        "code" : "59408-5"
+      },
+      {
+        "system" : "http://loinc.org",
+        "display" : "Vital signs",
+        "code" : "8716-3"
+      }
+    ]
+  },
+  "subject" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "performer" : [
+    {
+      "display" : "Nurse Anna M",
+      "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/TlHBo-aW0IqBVt7ui2M119QB"
+    }
+  ],
+  "effectiveDateTime" : "2017-01-13T21:00:00Z",
+  "resourceType" : "Observation"
+}

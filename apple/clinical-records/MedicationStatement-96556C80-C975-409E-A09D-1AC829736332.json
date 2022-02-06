@@ -1,0 +1,116 @@
+{
+  "status" : "active",
+  "dosage" : [
+    {
+      "timing" : {
+        "code" : {
+          "text" : "once as needed"
+        },
+        "repeat" : {
+          "period" : 1,
+          "periodUnits" : "d",
+          "frequency" : 1,
+          "boundsPeriod" : {
+            "start" : "2017-02-22"
+          }
+        }
+      },
+      "method" : {
+        "text" : "Take",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.798268.8600",
+            "display" : "Take",
+            "code" : "11"
+          }
+        ]
+      },
+      "quantityQuantity" : {
+        "code" : "mg",
+        "value" : 500,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mg"
+      },
+      "text" : "Take 1 capsule (500 mg total) by mouth once as needed (30 min prior to dental cleaning).",
+      "asNeededBoolean" : true,
+      "extension" : [
+        {
+          "url" : "https://open.epic.com/fhir/extensions/ordered-dose",
+          "valueQuantity" : {
+            "code" : "mg",
+            "value" : 500,
+            "system" : "http://unitsofmeasure.org",
+            "unit" : "mg"
+          }
+        },
+        {
+          "url" : "https://open.epic.com/fhir/extensions/admin-amount",
+          "valueQuantity" : {
+            "value" : 1,
+            "unit" : "capsule"
+          }
+        }
+      ],
+      "route" : {
+        "text" : "Oral",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.330",
+            "display" : "Oral",
+            "code" : "15"
+          }
+        ]
+      }
+    }
+  ],
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "id" : "TTLKpGdwRZ07.30.j5zLCBy1UmfLygYx0UHoTmNN0foUB",
+  "effectivePeriod" : {
+    "start" : "2017-02-22"
+  },
+  "medicationCodeableConcept" : {
+    "text" : "amoxicillin 500 MG capsule",
+    "coding" : [
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display" : "amoxicillin 500 MG capsule",
+        "code" : "308191"
+      }
+    ]
+  },
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "250277996"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "250277996:2477478217"
+    }
+  ],
+  "informationSource" : {
+    "display" : "Tiffany Nicole Castillo, MD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/TDzEttra.u.L7EUsmF2BlFAB"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.category",
+      "valueCodeableConcept" : {
+        "text" : "Community",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-statement-category",
+            "display" : "Community",
+            "code" : "community"
+          }
+        ]
+      }
+    }
+  ],
+  "resourceType" : "MedicationStatement"
+}

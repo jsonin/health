@@ -1,0 +1,42 @@
+{
+  "status" : "completed",
+  "notPerformed" : false,
+  "id" : "TL6vB4lUD7r92H7mc70kX1bbCQeVkmoDaqDtnXlfVmfkB",
+  "code" : {
+    "text" : "ARTHROPLASTY TOTAL HIP",
+    "coding" : [
+      {
+        "system" : "http://www.ama-assn.org/go/cpt",
+        "display" : "ARTHROPLASTY TOTAL HIP",
+        "code" : "27130"
+      }
+    ]
+  },
+  "subject" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798276",
+      "value" : "1082616",
+      "type" : {
+        "text" : "ORL"
+      }
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.696580",
+      "value" : "1",
+      "type" : {
+        "text" : "EAP"
+      }
+    }
+  ],
+  "performedPeriod" : {
+    "start" : "2017-01-13T21:33:00Z",
+    "end" : "2017-01-14T00:02:56Z"
+  },
+  "resourceType" : "Procedure"
+}

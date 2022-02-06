@@ -1,0 +1,54 @@
+{
+  "status" : "final",
+  "category" : {
+    "text" : "Laboratory",
+    "coding" : [
+      {
+        "system" : "http://hl7.org/fhir/observation-category",
+        "display" : "Laboratory",
+        "code" : "laboratory"
+      }
+    ]
+  },
+  "issued" : "2017-01-14T09:46:11Z",
+  "id" : "Tg6L2w4PzAS9l.80CIdqmtHJbs23YM4NxuypEQVtW0nDpQCSQaoyRYqAToO6Om54LB",
+  "code" : {
+    "text" : "PLT",
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "display" : "Platelets [#/volume] in Blood by Automated count",
+        "code" : "777-3"
+      }
+    ]
+  },
+  "valueQuantity" : {
+    "code" : "K/uL",
+    "value" : 155,
+    "system" : "http://unitsofmeasure.org",
+    "unit" : "K/uL"
+  },
+  "subject" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "referenceRange" : [
+    {
+      "low" : {
+        "code" : "K/uL",
+        "value" : 150,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "K/uL"
+      },
+      "high" : {
+        "code" : "K/uL",
+        "value" : 400,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "K/uL"
+      },
+      "text" : "150 - 400 K/uL"
+    }
+  ],
+  "effectiveDateTime" : "2017-01-14T09:15:00Z",
+  "resourceType" : "Observation"
+}

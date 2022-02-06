@@ -1,0 +1,54 @@
+{
+  "status" : "final",
+  "category" : {
+    "text" : "Laboratory",
+    "coding" : [
+      {
+        "system" : "http://hl7.org/fhir/observation-category",
+        "display" : "Laboratory",
+        "code" : "laboratory"
+      }
+    ]
+  },
+  "issued" : "2017-01-14T09:46:11Z",
+  "id" : "Tg6L2w4PzAS9l.80CIdqmtKnhEDsskTTf8bJc1dDRz4fTQgdRlDQGK4qxjj2Ugt50B",
+  "code" : {
+    "text" : "ABSOLUTE NRBC",
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "display" : "Nucleated erythrocytes [#/volume] in Blood by Automated count",
+        "code" : "771-6"
+      }
+    ]
+  },
+  "valueQuantity" : {
+    "code" : "K/uL",
+    "value" : 0.00,
+    "system" : "http://unitsofmeasure.org",
+    "unit" : "K/uL"
+  },
+  "subject" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "referenceRange" : [
+    {
+      "low" : {
+        "code" : "K/uL",
+        "value" : 0,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "K/uL"
+      },
+      "high" : {
+        "code" : "K/uL",
+        "value" : 0.01,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "K/uL"
+      },
+      "text" : "0 - 0.01 K/uL"
+    }
+  ],
+  "effectiveDateTime" : "2017-01-14T09:15:00Z",
+  "resourceType" : "Observation"
+}

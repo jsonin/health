@@ -1,0 +1,137 @@
+{
+  "id" : "TQr-VxhiFzC1NKJyKr3wTU6AhRDzcN5dHXm9zNps-fFoB",
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "note" : "This order was ordered as part of group #356169. Only one of the orders from this group will actually be given to the patient.",
+  "resourceType" : "MedicationOrder",
+  "dateWritten" : "2017-01-13",
+  "contained" : [
+    {
+      "code" : {
+        "text" : "ONDANSETRON 4 MG DISINTEGRATING TABLET",
+        "coding" : [
+          {
+            "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display" : "ONDANSETRON 4 MG DISINTEGRATING TABLET",
+            "code" : "104894"
+          }
+        ]
+      },
+      "id" : "TXg5zTaYxIbxMuYuHPdxBxwB",
+      "resourceType" : "Medication",
+      "product" : {
+        "form" : {
+          "text" : "Tablet, Rapid Dissolve",
+          "coding" : [
+            {
+              "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.310",
+              "display" : "Tablet, Rapid Dissolve",
+              "code" : "137"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "250252239"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "250252239:0676683116"
+    }
+  ],
+  "reasonEnded" : {
+    "text" : "Patient Discharge",
+    "coding" : [
+      {
+        "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.798268.7074",
+        "display" : "Patient Discharge",
+        "code" : "18"
+      }
+    ]
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.category",
+      "valueCodeableConcept" : {
+        "text" : "Inpatient",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-request-category",
+            "display" : "Inpatient",
+            "code" : "inpatient"
+          }
+        ]
+      }
+    }
+  ],
+  "dosageInstruction" : [
+    {
+      "asNeededBoolean" : true,
+      "timing" : {
+        "code" : {
+          "text" : "every 6 (six) hours as needed"
+        },
+        "repeat" : {
+          "frequency" : 1,
+          "period" : 6,
+          "periodUnits" : "h",
+          "boundsPeriod" : {
+            "start" : "2017-01-13T22:43:02Z",
+            "end" : "2017-01-15T01:05:19Z"
+          }
+        }
+      },
+      "doseQuantity" : {
+        "code" : "mg",
+        "value" : 4,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mg"
+      },
+      "route" : {
+        "text" : "Oral",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.330",
+            "display" : "Oral",
+            "code" : "15"
+          }
+        ]
+      },
+      "extension" : [
+        {
+          "url" : "https://open.epic.com/fhir/extensions/ordered-dose",
+          "valueQuantity" : {
+            "code" : "mg",
+            "value" : 4,
+            "system" : "http://unitsofmeasure.org",
+            "unit" : "mg"
+          }
+        },
+        {
+          "url" : "https://open.epic.com/fhir/extensions/admin-amount",
+          "valueQuantity" : {
+            "value" : 1,
+            "unit" : "tablet"
+          }
+        }
+      ]
+    }
+  ],
+  "prescriber" : {
+    "display" : "Kevin Anthony Kopko, MD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/Ttu79G6ywRLBLG5sDInu0AwB"
+  },
+  "status" : "stopped",
+  "medicationReference" : {
+    "display" : "ondansetron",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Medication/TXg5zTaYxIbxMuYuHPdxBxwB"
+  }
+}

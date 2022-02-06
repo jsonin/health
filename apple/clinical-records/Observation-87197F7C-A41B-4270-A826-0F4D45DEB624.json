@@ -1,0 +1,33 @@
+{
+  "status" : "final",
+  "category" : {
+    "text" : "Laboratory",
+    "coding" : [
+      {
+        "system" : "http://hl7.org/fhir/observation-category",
+        "display" : "Laboratory",
+        "code" : "laboratory"
+      }
+    ]
+  },
+  "issued" : "2017-01-14T10:20:54Z",
+  "id" : "T3mHtyd5TVntDOq6Rj4QzV-iSouBmCCta5clajPVVJ98KCAKvfUTqg05c1laY03BUB",
+  "code" : {
+    "text" : "EGFR",
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "display" : "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)",
+        "code" : "33914-3"
+      }
+    ]
+  },
+  "valueString" : ">60",
+  "subject" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "comments" : "Abnormal if <60 mL/min/1.73m2. If patient is African-American, multiply the result by 1.21.",
+  "effectiveDateTime" : "2017-01-14T09:15:00Z",
+  "resourceType" : "Observation"
+}

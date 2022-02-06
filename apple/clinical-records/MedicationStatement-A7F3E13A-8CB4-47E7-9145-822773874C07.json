@@ -1,0 +1,114 @@
+{
+  "id" : "TQr-VxhiFzC1NKJyKr3wTU6AhRDzcN5dHXm9zNps-fFoB",
+  "medicationCodeableConcept" : {
+    "text" : "ondansetron",
+    "coding" : [
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display" : "ondansetron",
+        "code" : "104894"
+      }
+    ]
+  },
+  "note" : "This order was ordered as part of group #356169. Only one of the orders from this group will actually be given to the patient.",
+  "resourceType" : "MedicationStatement",
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "250252239"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "250252239:0676683116"
+    }
+  ],
+  "informationSource" : {
+    "display" : "Kevin Anthony Kopko, MD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/Ttu79G6ywRLBLG5sDInu0AwB"
+  },
+  "dosage" : [
+    {
+      "asNeededBoolean" : true,
+      "timing" : {
+        "code" : {
+          "text" : "every 6 (six) hours as needed"
+        },
+        "repeat" : {
+          "period" : 6,
+          "periodUnits" : "h",
+          "frequency" : 1,
+          "boundsPeriod" : {
+            "start" : "2017-01-13T22:43:02Z",
+            "end" : "2017-01-15T01:05:19Z"
+          }
+        }
+      },
+      "quantityQuantity" : {
+        "code" : "mg",
+        "value" : 4,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mg"
+      },
+      "route" : {
+        "text" : "Oral",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.330",
+            "display" : "Oral",
+            "code" : "15"
+          }
+        ]
+      },
+      "extension" : [
+        {
+          "url" : "https://open.epic.com/fhir/extensions/ordered-dose",
+          "valueQuantity" : {
+            "code" : "mg",
+            "value" : 4,
+            "system" : "http://unitsofmeasure.org",
+            "unit" : "mg"
+          }
+        },
+        {
+          "url" : "https://open.epic.com/fhir/extensions/admin-amount",
+          "valueQuantity" : {
+            "value" : 1,
+            "unit" : "tablet"
+          }
+        }
+      ]
+    }
+  ],
+  "effectivePeriod" : {
+    "start" : "2017-01-13T22:43:02Z",
+    "end" : "2017-01-15T01:05:19Z"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.category",
+      "valueCodeableConcept" : {
+        "text" : "Inpatient",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-statement-category",
+            "display" : "Inpatient",
+            "code" : "inpatient"
+          }
+        ]
+      }
+    }
+  ],
+  "supportingInformation" : [
+    {
+      "display" : "Ondansetron (Pf) (Zofran) Injection 2 Mg",
+      "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/MedicationStatement/TerF1hUptzuh7YMol0aFxmvcmGCtFnOCDP5QzmZSpLjkB"
+    }
+  ],
+  "status" : "completed",
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  }
+}

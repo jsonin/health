@@ -1,0 +1,154 @@
+{
+  "id" : "TsMpvZZSX.4Tf8AAlXht9DPSW2pL1bgxWHhdJGne6TX8B",
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "resourceType" : "MedicationOrder",
+  "contained" : [
+    {
+      "code" : {
+        "text" : "ACETAMINOPHEN 325 MG TABLET",
+        "coding" : [
+          {
+            "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display" : "ACETAMINOPHEN 325 MG TABLET",
+            "code" : "313782"
+          }
+        ]
+      },
+      "id" : "TFYDswq0d2biXvPDmQj0EPQB",
+      "resourceType" : "Medication",
+      "product" : {
+        "form" : {
+          "text" : "Tablet",
+          "coding" : [
+            {
+              "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.310",
+              "display" : "Tablet",
+              "code" : "81"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "dateWritten" : "2017-01-13",
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "233424239"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "233424239:2702519818"
+    }
+  ],
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.category",
+      "valueCodeableConcept" : {
+        "text" : "Community",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-request-category",
+            "display" : "Community",
+            "code" : "community"
+          }
+        ]
+      }
+    }
+  ],
+  "dispenseRequest" : {
+    "quantity" : {
+      "value" : 240,
+      "unit" : "tablet"
+    },
+    "expectedSupplyDuration" : {
+      "code" : "d",
+      "value" : 30,
+      "system" : "http://unitsofmeasure.org",
+      "unit" : "days"
+    },
+    "validityPeriod" : {
+      "start" : "2017-01-13",
+      "end" : "2017-02-12"
+    },
+    "numberOfRepeatsAllowed" : 0
+  },
+  "dosageInstruction" : [
+    {
+      "method" : {
+        "text" : "Take",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.798268.8600",
+            "display" : "Take",
+            "code" : "11"
+          }
+        ]
+      },
+      "timing" : {
+        "code" : {
+          "text" : "every 6 (six) hours as needed"
+        },
+        "repeat" : {
+          "frequency" : 1,
+          "period" : 6,
+          "periodUnits" : "h",
+          "boundsPeriod" : {
+            "start" : "2017-01-13",
+            "end" : "2017-02-12"
+          }
+        }
+      },
+      "text" : "Take 2 tablets (650 mg total) by mouth every 6 (six) hours as needed for mild pain.",
+      "asNeededBoolean" : true,
+      "extension" : [
+        {
+          "url" : "https://open.epic.com/fhir/extensions/ordered-dose",
+          "valueQuantity" : {
+            "code" : "mg",
+            "value" : 650,
+            "system" : "http://unitsofmeasure.org",
+            "unit" : "mg"
+          }
+        },
+        {
+          "url" : "https://open.epic.com/fhir/extensions/admin-amount",
+          "valueQuantity" : {
+            "value" : 2,
+            "unit" : "tablet"
+          }
+        }
+      ],
+      "route" : {
+        "text" : "Oral",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.330",
+            "display" : "Oral",
+            "code" : "15"
+          }
+        ]
+      },
+      "doseQuantity" : {
+        "code" : "mg",
+        "value" : 650,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mg"
+      }
+    }
+  ],
+  "prescriber" : {
+    "display" : "Kevin Anthony Kopko, MD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/Ttu79G6ywRLBLG5sDInu0AwB"
+  },
+  "status" : "completed",
+  "medicationReference" : {
+    "display" : "acetaminophen 325 mg tablet",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Medication/TFYDswq0d2biXvPDmQj0EPQB"
+  }
+}

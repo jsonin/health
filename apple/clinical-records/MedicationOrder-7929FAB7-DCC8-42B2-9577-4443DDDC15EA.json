@@ -1,0 +1,164 @@
+{
+  "id" : "TsikN4NStztA78S-qyxWLa0OPYUJLjE7mkdVCzrRnUdEB",
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "resourceType" : "MedicationOrder",
+  "dateWritten" : "2017-01-13",
+  "contained" : [
+    {
+      "code" : {
+        "text" : "DOCUSATE SODIUM 100 MG CAPSULE",
+        "coding" : [
+          {
+            "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display" : "DOCUSATE SODIUM 100 MG CAPSULE",
+            "code" : "1115005"
+          }
+        ]
+      },
+      "id" : "TGuk.Rrq4DMjVd-1-QRkuWgB",
+      "resourceType" : "Medication",
+      "product" : {
+        "form" : {
+          "text" : "Capsule",
+          "coding" : [
+            {
+              "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.310",
+              "display" : "Capsule",
+              "code" : "8"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "233424237"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "233424237:2467633152"
+    }
+  ],
+  "reasonEnded" : {
+    "text" : "Therapy Completed/No Longer Necessary",
+    "coding" : [
+      {
+        "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.798268.7074",
+        "display" : "Therapy Completed/No Longer Necessary",
+        "code" : "6"
+      }
+    ]
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.category",
+      "valueCodeableConcept" : {
+        "text" : "Community",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-request-category",
+            "display" : "Community",
+            "code" : "community"
+          }
+        ]
+      }
+    }
+  ],
+  "dosageInstruction" : [
+    {
+      "method" : {
+        "text" : "Take",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.798268.8600",
+            "display" : "Take",
+            "code" : "11"
+          }
+        ]
+      },
+      "timing" : {
+        "code" : {
+          "text" : "2 (two) times a day"
+        },
+        "repeat" : {
+          "frequency" : 2,
+          "period" : 1,
+          "periodUnits" : "d",
+          "boundsPeriod" : {
+            "start" : "2017-01-13",
+            "end" : "2017-05-24"
+          }
+        }
+      },
+      "text" : "Take 1 capsule (100 mg total) by mouth 2 (two) times a day.",
+      "asNeededBoolean" : false,
+      "extension" : [
+        {
+          "url" : "https://open.epic.com/fhir/extensions/ordered-dose",
+          "valueQuantity" : {
+            "code" : "mg",
+            "value" : 100,
+            "system" : "http://unitsofmeasure.org",
+            "unit" : "mg"
+          }
+        },
+        {
+          "url" : "https://open.epic.com/fhir/extensions/admin-amount",
+          "valueQuantity" : {
+            "value" : 1,
+            "unit" : "capsule"
+          }
+        }
+      ],
+      "route" : {
+        "text" : "Oral",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.330",
+            "display" : "Oral",
+            "code" : "15"
+          }
+        ]
+      },
+      "doseQuantity" : {
+        "code" : "mg",
+        "value" : 100,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mg"
+      }
+    }
+  ],
+  "dispenseRequest" : {
+    "quantity" : {
+      "value" : 60,
+      "unit" : "capsule"
+    },
+    "expectedSupplyDuration" : {
+      "code" : "d",
+      "value" : 30,
+      "system" : "http://unitsofmeasure.org",
+      "unit" : "days"
+    },
+    "validityPeriod" : {
+      "start" : "2017-01-13",
+      "end" : "2017-05-24"
+    },
+    "numberOfRepeatsAllowed" : 0
+  },
+  "prescriber" : {
+    "display" : "Kevin Anthony Kopko, MD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/Ttu79G6ywRLBLG5sDInu0AwB"
+  },
+  "status" : "stopped",
+  "medicationReference" : {
+    "display" : "docusate sodium 100 MG capsule",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Medication/TGuk.Rrq4DMjVd-1-QRkuWgB"
+  }
+}

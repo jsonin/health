@@ -1,0 +1,54 @@
+{
+  "status" : "final",
+  "category" : {
+    "text" : "Laboratory",
+    "coding" : [
+      {
+        "system" : "http://hl7.org/fhir/observation-category",
+        "display" : "Laboratory",
+        "code" : "laboratory"
+      }
+    ]
+  },
+  "issued" : "2017-01-14T09:46:11Z",
+  "id" : "Tg6L2w4PzAS9l.80CIdqmtDzWfHG8.0FX3wa0KpxoyvFJDuMlAe00oP.6FORdcRrYB",
+  "code" : {
+    "text" : "MCH",
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "display" : "MCH [Entitic mass] by Automated count",
+        "code" : "785-6"
+      }
+    ]
+  },
+  "valueQuantity" : {
+    "code" : "pg",
+    "value" : 28.2,
+    "system" : "http://unitsofmeasure.org",
+    "unit" : "pg"
+  },
+  "subject" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "referenceRange" : [
+    {
+      "low" : {
+        "code" : "pg",
+        "value" : 26,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "pg"
+      },
+      "high" : {
+        "code" : "pg",
+        "value" : 34,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "pg"
+      },
+      "text" : "26.0 - 34.0 pg"
+    }
+  ],
+  "effectiveDateTime" : "2017-01-14T09:15:00Z",
+  "resourceType" : "Observation"
+}

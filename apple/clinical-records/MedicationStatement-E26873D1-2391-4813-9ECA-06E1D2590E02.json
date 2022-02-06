@@ -1,0 +1,103 @@
+{
+  "status" : "active",
+  "dosage" : [
+    {
+      "timing" : {
+        "code" : {
+          "text" : "daily"
+        },
+        "repeat" : {
+          "period" : 1,
+          "periodUnits" : "d",
+          "frequency" : 1
+        }
+      },
+      "method" : {
+        "text" : "Take",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.798268.8600",
+            "display" : "Take",
+            "code" : "11"
+          }
+        ]
+      },
+      "quantityQuantity" : {
+        "code" : "mg",
+        "value" : 10,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mg"
+      },
+      "text" : "Take 10 mg by mouth daily. Reported on 5/24/2017",
+      "asNeededBoolean" : false,
+      "extension" : [
+        {
+          "url" : "https://open.epic.com/fhir/extensions/ordered-dose",
+          "valueQuantity" : {
+            "code" : "mg",
+            "value" : 10,
+            "system" : "http://unitsofmeasure.org",
+            "unit" : "mg"
+          }
+        }
+      ],
+      "route" : {
+        "text" : "Oral",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.330",
+            "display" : "Oral",
+            "code" : "15"
+          }
+        ]
+      }
+    }
+  ],
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "id" : "TninzqAXZKSpKNfg7xuB9sV6nKDlmeOm2yi-HMwVRxyQB",
+  "medicationCodeableConcept" : {
+    "text" : "lisinopril 10 MG tablet",
+    "coding" : [
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display" : "lisinopril 10 MG tablet",
+        "code" : "314076"
+      }
+    ]
+  },
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "233424222"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "233424222:2517818914"
+    }
+  ],
+  "informationSource" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.category",
+      "valueCodeableConcept" : {
+        "text" : "Patient Specified",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-statement-category",
+            "display" : "Patient Specified",
+            "code" : "patientspecified"
+          }
+        ]
+      }
+    }
+  ],
+  "resourceType" : "MedicationStatement"
+}

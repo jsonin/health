@@ -1,0 +1,79 @@
+{
+  "id" : "TsikN4NStztA78S-qyxWLa0OPYUJLjE7mkdVCzrRnUdEB",
+  "medicationCodeableConcept" : {
+    "text" : "docusate sodium 100 MG capsule",
+    "coding" : [
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display" : "docusate sodium 100 MG capsule",
+        "code" : "1115005"
+      }
+    ]
+  },
+  "note" : "Reported on 5/24/2017",
+  "resourceType" : "MedicationStatement",
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "233424237"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "233424237:2467633152"
+    }
+  ],
+  "informationSource" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "dosage" : [
+    {
+      "text" : "Not taking: Reported on 5/24/2017",
+      "timing" : {
+        "repeat" : {
+          "boundsPeriod" : {
+            "start" : "2017-01-13",
+            "end" : "2017-05-24"
+          }
+        }
+      },
+      "method" : {
+        "text" : "Take",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.798268.8600",
+            "display" : "Take",
+            "code" : "11"
+          }
+        ]
+      }
+    }
+  ],
+  "effectivePeriod" : {
+    "start" : "2017-01-13",
+    "end" : "2017-05-24"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.category",
+      "valueCodeableConcept" : {
+        "text" : "Community",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-statement-category",
+            "display" : "Community",
+            "code" : "community"
+          }
+        ]
+      }
+    }
+  ],
+  "wasNotTaken" : true,
+  "status" : "completed",
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  }
+}

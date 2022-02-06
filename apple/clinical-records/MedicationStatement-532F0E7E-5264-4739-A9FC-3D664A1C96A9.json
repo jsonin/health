@@ -1,0 +1,107 @@
+{
+  "status" : "completed",
+  "dosage" : [
+    {
+      "asNeededBoolean" : false,
+      "timing" : {
+        "code" : {
+          "text" : "2 (two) times a day"
+        },
+        "repeat" : {
+          "period" : 1,
+          "periodUnits" : "d",
+          "frequency" : 2,
+          "boundsPeriod" : {
+            "start" : "2017-01-14T02:00:00Z",
+            "end" : "2017-01-15T01:05:19Z"
+          }
+        }
+      },
+      "quantityQuantity" : {
+        "code" : "mg",
+        "value" : 325,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mg"
+      },
+      "route" : {
+        "text" : "Oral",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.330",
+            "display" : "Oral",
+            "code" : "15"
+          }
+        ]
+      },
+      "extension" : [
+        {
+          "url" : "https://open.epic.com/fhir/extensions/ordered-dose",
+          "valueQuantity" : {
+            "code" : "mg",
+            "value" : 325,
+            "system" : "http://unitsofmeasure.org",
+            "unit" : "mg"
+          }
+        },
+        {
+          "url" : "https://open.epic.com/fhir/extensions/admin-amount",
+          "valueQuantity" : {
+            "value" : 1,
+            "unit" : "tablet"
+          }
+        }
+      ]
+    }
+  ],
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "id" : "Tu9r7v.ul078l57hOOzKvK-tlYYj-4vuC9DDgrtLqaUkB",
+  "effectivePeriod" : {
+    "start" : "2017-01-14T02:00:00Z",
+    "end" : "2017-01-15T01:05:19Z"
+  },
+  "medicationCodeableConcept" : {
+    "text" : "aspirin",
+    "coding" : [
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display" : "aspirin",
+        "code" : "198467"
+      }
+    ]
+  },
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "250252244"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "250252244:0725883140"
+    }
+  ],
+  "informationSource" : {
+    "display" : "Kevin Anthony Kopko, MD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/Ttu79G6ywRLBLG5sDInu0AwB"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.category",
+      "valueCodeableConcept" : {
+        "text" : "Inpatient",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-statement-category",
+            "display" : "Inpatient",
+            "code" : "inpatient"
+          }
+        ]
+      }
+    }
+  ],
+  "resourceType" : "MedicationStatement"
+}

@@ -1,0 +1,70 @@
+{
+  "status" : "completed",
+  "dosage" : [
+    {
+      "timing" : {
+        "code" : {
+          "text" : "continuous prn"
+        },
+        "repeat" : {
+          "boundsPeriod" : {
+            "start" : "2017-01-13T16:48:00Z",
+            "end" : "2017-01-13T19:02:13Z"
+          }
+        }
+      },
+      "asNeededBoolean" : true
+    }
+  ],
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "id" : "T8waCMQaqEFqwYEit0r9O4QVoUsjBYS2jKrxHwbYbpmcB",
+  "effectivePeriod" : {
+    "start" : "2017-01-13T16:48:00Z",
+    "end" : "2017-01-13T19:02:13Z"
+  },
+  "medicationCodeableConcept" : {
+    "text" : "lactated Ringers",
+    "coding" : [
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display" : "lactated Ringers",
+        "code" : "847630"
+      }
+    ]
+  },
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "250277958"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "250277958:0364189771"
+    }
+  ],
+  "informationSource" : {
+    "display" : "Jingping Wang, MD, PhD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/TBa4XQIHdtJ5ed0cC4rOTgQB"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.category",
+      "valueCodeableConcept" : {
+        "text" : "Inpatient",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-statement-category",
+            "display" : "Inpatient",
+            "code" : "inpatient"
+          }
+        ]
+      }
+    }
+  ],
+  "resourceType" : "MedicationStatement"
+}

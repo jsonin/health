@@ -1,0 +1,47 @@
+{
+  "status" : "final",
+  "category" : {
+    "text" : "Vital Signs",
+    "coding" : [
+      {
+        "system" : "http://hl7.org/fhir/observation-category",
+        "display" : "Vital Signs",
+        "code" : "vital-signs"
+      }
+    ]
+  },
+  "valueQuantity" : {
+    "code" : "/min",
+    "value" : 68,
+    "system" : "http://unitsofmeasure.org",
+    "unit" : "/min"
+  },
+  "id" : "TWHhs8IwKALHuhTGnI1rmqQ-VDIZo1VVKbQ9T6Pn.Pdz9-eaOv3dGQsil7JmKIgGWB",
+  "code" : {
+    "text" : "Pulse",
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "display" : "Vital signs",
+        "code" : "8716-3"
+      },
+      {
+        "system" : "http://loinc.org",
+        "display" : "Heart rate",
+        "code" : "8867-4"
+      }
+    ]
+  },
+  "subject" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "performer" : [
+    {
+      "display" : "Nurse Jennifer Ann C",
+      "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/TQ-7snZ.ZDG8dMO8YPRwUmAB"
+    }
+  ],
+  "effectiveDateTime" : "2017-01-13T18:53:00Z",
+  "resourceType" : "Observation"
+}

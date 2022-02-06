@@ -1,0 +1,133 @@
+{
+  "status" : "completed",
+  "dosage" : [
+    {
+      "asNeededBoolean" : true,
+      "timing" : {
+        "code" : {
+          "text" : "every 5 (five) minutes as needed"
+        },
+        "repeat" : {
+          "period" : 5,
+          "periodUnits" : "min",
+          "frequency" : 1,
+          "boundsPeriod" : {
+            "start" : "2017-01-13T18:53:52Z",
+            "end" : "2017-01-13T22:32:40Z"
+          }
+        }
+      },
+      "quantityRange" : {
+        "low" : {
+          "code" : "ug",
+          "value" : 25,
+          "system" : "http://unitsofmeasure.org",
+          "unit" : "mcg"
+        },
+        "high" : {
+          "code" : "ug",
+          "value" : 50,
+          "system" : "http://unitsofmeasure.org",
+          "unit" : "mcg"
+        }
+      },
+      "route" : {
+        "text" : "Intravenous",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.330",
+            "display" : "Intravenous",
+            "code" : "11"
+          }
+        ]
+      },
+      "extension" : [
+        {
+          "url" : "https://open.epic.com/fhir/extensions/ordered-dose",
+          "valueRange" : {
+            "low" : {
+              "code" : "ug",
+              "value" : 25,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "mcg"
+            },
+            "high" : {
+              "code" : "ug",
+              "value" : 50,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "mcg"
+            }
+          }
+        },
+        {
+          "url" : "https://open.epic.com/fhir/extensions/admin-amount",
+          "valueRange" : {
+            "low" : {
+              "code" : "mL",
+              "value" : 0.5,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "mL"
+            },
+            "high" : {
+              "code" : "mL",
+              "value" : 1,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "mL"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "id" : "TsLJKYWHwS9AUjGr4lj.nR04cevWr7na15gFyT05fEIcB",
+  "effectivePeriod" : {
+    "start" : "2017-01-13T18:53:52Z",
+    "end" : "2017-01-13T22:32:40Z"
+  },
+  "medicationCodeableConcept" : {
+    "text" : "fentaNYL (PF)",
+    "coding" : [
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display" : "fentaNYL (PF)",
+        "code" : "2168270"
+      }
+    ]
+  },
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "250277955"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "250277955:0280301676"
+    }
+  ],
+  "informationSource" : {
+    "display" : "Jingping Wang, MD, PhD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/TBa4XQIHdtJ5ed0cC4rOTgQB"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.category",
+      "valueCodeableConcept" : {
+        "text" : "Inpatient",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-statement-category",
+            "display" : "Inpatient",
+            "code" : "inpatient"
+          }
+        ]
+      }
+    }
+  ],
+  "resourceType" : "MedicationStatement"
+}

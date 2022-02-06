@@ -1,0 +1,73 @@
+{
+  "status" : "completed",
+  "dosage" : [
+    {
+      "timing" : {
+        "code" : {
+          "text" : "as needed"
+        },
+        "repeat" : {
+          "period" : 1,
+          "periodUnits" : "d",
+          "frequency" : 1,
+          "boundsPeriod" : {
+            "start" : "2017-01-13T18:18:00Z",
+            "end" : "2017-01-13T19:02:13Z"
+          }
+        }
+      },
+      "asNeededBoolean" : true
+    }
+  ],
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "id" : "TrVZ0HoGVnFhF-UtUV6Kl0a.y8D4j9DEkDzAS8qiMpZkB",
+  "effectivePeriod" : {
+    "start" : "2017-01-13T18:18:00Z",
+    "end" : "2017-01-13T19:02:13Z"
+  },
+  "medicationCodeableConcept" : {
+    "text" : "ketorolac",
+    "coding" : [
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display" : "ketorolac",
+        "code" : "1665461"
+      }
+    ]
+  },
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "250277962"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "250277962:2645401502"
+    }
+  ],
+  "informationSource" : {
+    "display" : "Jingping Wang, MD, PhD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/TBa4XQIHdtJ5ed0cC4rOTgQB"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.category",
+      "valueCodeableConcept" : {
+        "text" : "Inpatient",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-statement-category",
+            "display" : "Inpatient",
+            "code" : "inpatient"
+          }
+        ]
+      }
+    }
+  ],
+  "resourceType" : "MedicationStatement"
+}

@@ -1,0 +1,33 @@
+{
+  "status" : "final",
+  "category" : {
+    "text" : "Laboratory",
+    "coding" : [
+      {
+        "system" : "http://hl7.org/fhir/observation-category",
+        "display" : "Laboratory",
+        "code" : "laboratory"
+      }
+    ]
+  },
+  "issued" : "2017-01-03T17:04:01Z",
+  "id" : "TnfUjOCfzPZdbZ9TwbAVhtn-.BNTDovxxkIebad3-YUAC1fkvYQ47xZ9h4U-WZP0HB",
+  "code" : {
+    "text" : "S.AUREUS INTERP",
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "display" : "Staphylococcus aureus rRNA [Presence] in Unspecified specimen by Probe",
+        "code" : "5033-6"
+      }
+    ]
+  },
+  "valueString" : "S.aureus Detected (Not MRSA - Methicillin Resistant S.aureus)",
+  "subject" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "comments" : "This test was conducted as part of Pre-Operative Screening for Staphylococcus aureus. Please direct any questions regarding this result to the Ordering Provider.",
+  "effectiveDateTime" : "2017-01-03T13:20:00Z",
+  "resourceType" : "Observation"
+}

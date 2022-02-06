@@ -1,0 +1,99 @@
+{
+  "status" : "completed",
+  "dosage" : [
+    {
+      "asNeededBoolean" : false,
+      "timing" : {
+        "code" : {
+          "text" : "once"
+        },
+        "repeat" : {
+          "boundsPeriod" : {
+            "start" : "2017-01-13T17:15:00Z",
+            "end" : "2017-01-13T18:27:00Z"
+          }
+        }
+      },
+      "quantityQuantity" : {
+        "code" : "mg",
+        "value" : 1000,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mg"
+      },
+      "route" : {
+        "text" : "Intravenous",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.330",
+            "display" : "Intravenous",
+            "code" : "11"
+          }
+        ]
+      },
+      "extension" : [
+        {
+          "url" : "https://open.epic.com/fhir/extensions/ordered-dose",
+          "valueQuantity" : {
+            "code" : "mg",
+            "value" : 1000,
+            "system" : "http://unitsofmeasure.org",
+            "unit" : "mg"
+          }
+        },
+        {
+          "url" : "https://open.epic.com/fhir/extensions/admin-amount",
+          "valueQuantity" : {
+            "code" : "mg",
+            "value" : 1000,
+            "system" : "http://unitsofmeasure.org",
+            "unit" : "mg"
+          }
+        }
+      ]
+    }
+  ],
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "id" : "TO19UdAO0B8oY.us2YSP1EUJpaJL0hP5nZKQ3vLyySlAB",
+  "effectivePeriod" : {
+    "start" : "2017-01-13T17:15:00Z",
+    "end" : "2017-01-13T18:27:00Z"
+  },
+  "medicationCodeableConcept" : {
+    "text" : "tranexamic acid (CYKLOKAPRON) injection 100 mg/mL (10 mL)"
+  },
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "233424265"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "233424265:0554249111"
+    }
+  ],
+  "informationSource" : {
+    "display" : "Kevin Anthony Kopko, MD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/Ttu79G6ywRLBLG5sDInu0AwB"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.category",
+      "valueCodeableConcept" : {
+        "text" : "Inpatient",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-statement-category",
+            "display" : "Inpatient",
+            "code" : "inpatient"
+          }
+        ]
+      }
+    }
+  ],
+  "resourceType" : "MedicationStatement"
+}

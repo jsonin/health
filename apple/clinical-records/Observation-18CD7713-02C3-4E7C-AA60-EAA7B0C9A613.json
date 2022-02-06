@@ -1,0 +1,54 @@
+{
+  "status" : "final",
+  "category" : {
+    "text" : "Laboratory",
+    "coding" : [
+      {
+        "system" : "http://hl7.org/fhir/observation-category",
+        "display" : "Laboratory",
+        "code" : "laboratory"
+      }
+    ]
+  },
+  "issued" : "2017-01-14T09:46:11Z",
+  "id" : "Tg6L2w4PzAS9l.80CIdqmtDCYl.9wXhVpq-0mPFzQkA4s3neRzuE0QsKzIhNJcYtWB",
+  "code" : {
+    "text" : "RDW",
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "display" : "Erythrocyte distribution width [Ratio] by Automated count",
+        "code" : "788-0"
+      }
+    ]
+  },
+  "valueQuantity" : {
+    "code" : "%",
+    "value" : 12.5,
+    "system" : "http://unitsofmeasure.org",
+    "unit" : "%"
+  },
+  "subject" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "referenceRange" : [
+    {
+      "low" : {
+        "code" : "%",
+        "value" : 11.5,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "%"
+      },
+      "high" : {
+        "code" : "%",
+        "value" : 14.5,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "%"
+      },
+      "text" : "11.5 - 14.5 %"
+    }
+  ],
+  "effectiveDateTime" : "2017-01-14T09:15:00Z",
+  "resourceType" : "Observation"
+}

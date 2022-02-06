@@ -1,0 +1,54 @@
+{
+  "status" : "final",
+  "category" : {
+    "text" : "Laboratory",
+    "coding" : [
+      {
+        "system" : "http://hl7.org/fhir/observation-category",
+        "display" : "Laboratory",
+        "code" : "laboratory"
+      }
+    ]
+  },
+  "issued" : "2017-01-14T09:46:11Z",
+  "id" : "Tg6L2w4PzAS9l.80CIdqmtL4rxxCRKx9yBKkk9ZAlanC31NNIUiFx.vHlZTf86uDsB",
+  "code" : {
+    "text" : "MPV",
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "display" : "Platelet mean volume [Entitic volume] in Blood by Rees-Ecker",
+        "code" : "776-5"
+      }
+    ]
+  },
+  "valueQuantity" : {
+    "code" : "fl",
+    "value" : 9.8,
+    "system" : "http://unitsofmeasure.org",
+    "unit" : "fl"
+  },
+  "subject" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "referenceRange" : [
+    {
+      "low" : {
+        "code" : "fl",
+        "value" : 8.4,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "fl"
+      },
+      "high" : {
+        "code" : "fl",
+        "value" : 12,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "fl"
+      },
+      "text" : "8.4 - 12.0 fl"
+    }
+  ],
+  "effectiveDateTime" : "2017-01-14T09:15:00Z",
+  "resourceType" : "Observation"
+}

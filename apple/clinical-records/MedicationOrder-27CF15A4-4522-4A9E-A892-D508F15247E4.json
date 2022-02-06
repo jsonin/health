@@ -1,0 +1,140 @@
+{
+  "id" : "Tv7tGeeTJqYegOj.IKunr6C991v3Ie7rBMtXIbXD0dmYB",
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "resourceType" : "MedicationOrder",
+  "dateWritten" : "2017-01-13",
+  "contained" : [
+    {
+      "code" : {
+        "text" : "LISINOPRIL 10 MG TABLET",
+        "coding" : [
+          {
+            "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display" : "LISINOPRIL 10 MG TABLET",
+            "code" : "314076"
+          }
+        ]
+      },
+      "id" : "Tufy-jJ94Vfhyn0.8z50H1gB",
+      "resourceType" : "Medication",
+      "product" : {
+        "form" : {
+          "text" : "Tablet",
+          "coding" : [
+            {
+              "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.310",
+              "display" : "Tablet",
+              "code" : "81"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "233424235"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "233424235:2501188390"
+    }
+  ],
+  "reasonEnded" : {
+    "text" : "Patient Discharge",
+    "coding" : [
+      {
+        "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.798268.7074",
+        "display" : "Patient Discharge",
+        "code" : "18"
+      }
+    ]
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.category",
+      "valueCodeableConcept" : {
+        "text" : "Inpatient",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-request-category",
+            "display" : "Inpatient",
+            "code" : "inpatient"
+          }
+        ]
+      }
+    }
+  ],
+  "dosageInstruction" : [
+    {
+      "asNeededBoolean" : false,
+      "timing" : {
+        "code" : {
+          "text" : "daily"
+        },
+        "repeat" : {
+          "frequency" : 1,
+          "period" : 1,
+          "periodUnits" : "d",
+          "boundsPeriod" : {
+            "start" : "2017-01-14T14:00:00Z",
+            "end" : "2017-01-15T01:05:19Z"
+          }
+        }
+      },
+      "doseQuantity" : {
+        "code" : "mg",
+        "value" : 10,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mg"
+      },
+      "route" : {
+        "text" : "Oral",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.330",
+            "display" : "Oral",
+            "code" : "15"
+          }
+        ]
+      },
+      "extension" : [
+        {
+          "url" : "https://open.epic.com/fhir/extensions/ordered-dose",
+          "valueQuantity" : {
+            "code" : "mg",
+            "value" : 10,
+            "system" : "http://unitsofmeasure.org",
+            "unit" : "mg"
+          }
+        },
+        {
+          "url" : "https://open.epic.com/fhir/extensions/admin-amount",
+          "valueQuantity" : {
+            "value" : 1,
+            "unit" : "tablet"
+          }
+        }
+      ]
+    }
+  ],
+  "prescriber" : {
+    "display" : "Kevin Anthony Kopko, MD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/Ttu79G6ywRLBLG5sDInu0AwB"
+  },
+  "priorPrescription" : {
+    "display" : "lisinopril 10 MG tablet",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/MedicationOrder/TninzqAXZKSpKNfg7xuB9sV6nKDlmeOm2yi-HMwVRxyQB"
+  },
+  "status" : "stopped",
+  "medicationReference" : {
+    "display" : "lisinopril",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Medication/Tufy-jJ94Vfhyn0.8z50H1gB"
+  }
+}

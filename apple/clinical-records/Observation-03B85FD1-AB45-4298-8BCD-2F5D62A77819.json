@@ -1,0 +1,54 @@
+{
+  "status" : "final",
+  "category" : {
+    "text" : "Laboratory",
+    "coding" : [
+      {
+        "system" : "http://hl7.org/fhir/observation-category",
+        "display" : "Laboratory",
+        "code" : "laboratory"
+      }
+    ]
+  },
+  "issued" : "2017-01-14T10:20:54Z",
+  "id" : "T3mHtyd5TVntDOq6Rj4QzV8mPQ6SsSJln7HbDY8vTHQKruAo1lpgmXo3qRmjqjV2rB",
+  "code" : {
+    "text" : "CREATININE",
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "display" : "Creatinine [Mass/volume] in Serum or Plasma",
+        "code" : "2160-0"
+      }
+    ]
+  },
+  "valueQuantity" : {
+    "code" : "mg/dL",
+    "value" : 1.05,
+    "system" : "http://unitsofmeasure.org",
+    "unit" : "mg/dL"
+  },
+  "subject" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "referenceRange" : [
+    {
+      "low" : {
+        "code" : "mg/dL",
+        "value" : 0.6,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mg/dL"
+      },
+      "high" : {
+        "code" : "mg/dL",
+        "value" : 1.5,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mg/dL"
+      },
+      "text" : "0.60 - 1.50 mg/dL"
+    }
+  ],
+  "effectiveDateTime" : "2017-01-14T09:15:00Z",
+  "resourceType" : "Observation"
+}

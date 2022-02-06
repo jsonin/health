@@ -1,0 +1,62 @@
+{
+  "asserter" : {
+    "display" : "Kevin Anthony Kopko, MD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/Ttu79G6ywRLBLG5sDInu0AwB"
+  },
+  "dateRecorded" : "2017-01-13",
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "id" : "TGYRjGvqmp9Xhx6lMI-Qk5AB",
+  "code" : {
+    "text" : "Osteoarthritis of right hip",
+    "coding" : [
+      {
+        "system" : "http://hl7.org/fhir/sid/icd-9-cm/diagnosis",
+        "display" : "Osteoarthritis of right hip",
+        "code" : "715.95"
+      },
+      {
+        "system" : "urn:oid:2.16.840.1.113883.6.90",
+        "display" : "Osteoarthritis of right hip",
+        "code" : "M16.11"
+      },
+      {
+        "system" : "http://snomed.info/sct",
+        "display" : "Osteoarthritis of right hip joint (disorder)",
+        "code" : "323311000119107"
+      }
+    ]
+  },
+  "category" : {
+    "text" : "Diagnosis",
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "display" : "Diagnosis",
+        "code" : "29308-4"
+      },
+      {
+        "system" : "http://snomed.info/sct",
+        "display" : "Diagnosis",
+        "code" : "439401001"
+      },
+      {
+        "system" : "http://hl7.org/fhir/condition-category",
+        "display" : "Diagnosis",
+        "code" : "diagnosis"
+      },
+      {
+        "system" : "http://argonautwiki.hl7.org/extension-codes",
+        "display" : "Problem",
+        "code" : "problem"
+      }
+    ]
+  },
+  "clinicalStatus" : "resolved",
+  "verificationStatus" : "confirmed",
+  "abatementDateTime" : "2017-01-14",
+  "onsetDateTime" : "2017-01-13",
+  "resourceType" : "Condition"
+}

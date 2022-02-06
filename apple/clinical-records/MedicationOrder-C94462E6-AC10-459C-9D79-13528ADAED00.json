@@ -1,0 +1,142 @@
+{
+  "id" : "TIByodK6OrwS3RvZR6AJC-g.vFpanw7HCrgbN.B8XRMkB",
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "resourceType" : "MedicationOrder",
+  "dateWritten" : "2017-01-03",
+  "contained" : [
+    {
+      "code" : {
+        "text" : "MUPIROCIN 2 % TOPICAL OINTMENT",
+        "coding" : [
+          {
+            "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display" : "MUPIROCIN 2 % TOPICAL OINTMENT",
+            "code" : "106346"
+          }
+        ]
+      },
+      "id" : "TOR-Y8RlCt8mESKLP.m0wiQB",
+      "resourceType" : "Medication",
+      "product" : {
+        "form" : {
+          "text" : "Ointment",
+          "coding" : [
+            {
+              "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.310",
+              "display" : "Ointment",
+              "code" : "54"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "233424234"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "233424234:2517966009"
+    }
+  ],
+  "reasonEnded" : {
+    "text" : "Stop Taking at Discharge",
+    "coding" : [
+      {
+        "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.798268.7074",
+        "display" : "Stop Taking at Discharge",
+        "code" : "20"
+      }
+    ]
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.category",
+      "valueCodeableConcept" : {
+        "text" : "Community",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-request-category",
+            "display" : "Community",
+            "code" : "community"
+          }
+        ]
+      }
+    }
+  ],
+  "dosageInstruction" : [
+    {
+      "asNeededBoolean" : false,
+      "timing" : {
+        "code" : {
+          "text" : "2 (two) times a day"
+        },
+        "repeat" : {
+          "frequency" : 2,
+          "period" : 1,
+          "periodUnits" : "d",
+          "boundsPeriod" : {
+            "start" : "2017-01-03",
+            "end" : "2017-01-14"
+          }
+        }
+      },
+      "method" : {
+        "text" : "Apply",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.798268.8600",
+            "display" : "Apply",
+            "code" : "1"
+          }
+        ]
+      },
+      "route" : {
+        "text" : "Topical",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.330",
+            "display" : "Topical",
+            "code" : "36"
+          }
+        ]
+      },
+      "text" : "Apply topically 2 (two) times a day. Apply to each nostril with clean q-tip twice daily  for 5 days prior to surgery and morning of surgery."
+    }
+  ],
+  "dispenseRequest" : {
+    "quantity" : {
+      "code" : "g",
+      "value" : 22,
+      "system" : "http://unitsofmeasure.org",
+      "unit" : "g"
+    },
+    "expectedSupplyDuration" : {
+      "code" : "d",
+      "value" : 11,
+      "system" : "http://unitsofmeasure.org",
+      "unit" : "days"
+    },
+    "validityPeriod" : {
+      "start" : "2017-01-03",
+      "end" : "2017-01-14"
+    },
+    "numberOfRepeatsAllowed" : 0
+  },
+  "prescriber" : {
+    "display" : "Kevin Anthony Kopko, MD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/Ttu79G6ywRLBLG5sDInu0AwB"
+  },
+  "status" : "stopped",
+  "medicationReference" : {
+    "display" : "mupirocin 2 % ointment",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Medication/TOR-Y8RlCt8mESKLP.m0wiQB"
+  }
+}

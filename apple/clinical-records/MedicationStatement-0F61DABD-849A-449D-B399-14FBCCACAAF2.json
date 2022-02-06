@@ -1,0 +1,109 @@
+{
+  "status" : "completed",
+  "dosage" : [
+    {
+      "timing" : {
+        "code" : {
+          "text" : "every 8 (eight) hours as needed"
+        },
+        "repeat" : {
+          "period" : 8,
+          "periodUnits" : "h",
+          "frequency" : 1,
+          "boundsPeriod" : {
+            "end" : "2017-01-14"
+          }
+        }
+      },
+      "method" : {
+        "text" : "Take",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.798268.8600",
+            "display" : "Take",
+            "code" : "11"
+          }
+        ]
+      },
+      "quantityQuantity" : {
+        "code" : "mg",
+        "value" : 200,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mg"
+      },
+      "text" : "Take 200 mg by mouth every 8 (eight) hours as needed for fever.",
+      "asNeededBoolean" : true,
+      "extension" : [
+        {
+          "url" : "https://open.epic.com/fhir/extensions/ordered-dose",
+          "valueQuantity" : {
+            "code" : "mg",
+            "value" : 200,
+            "system" : "http://unitsofmeasure.org",
+            "unit" : "mg"
+          }
+        }
+      ],
+      "route" : {
+        "text" : "Oral",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.330",
+            "display" : "Oral",
+            "code" : "15"
+          }
+        ]
+      }
+    }
+  ],
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "id" : "T.vsslnOzewzYx3K1QNdYOTnSQFqbgrAV8W-ET3oj2nYB",
+  "effectivePeriod" : {
+    "end" : "2017-01-14"
+  },
+  "medicationCodeableConcept" : {
+    "text" : "ibuprofen 100 MG chewable tablet",
+    "coding" : [
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display" : "ibuprofen 100 MG chewable tablet",
+        "code" : "310963"
+      }
+    ]
+  },
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "233424221"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "233424221:2501041295"
+    }
+  ],
+  "informationSource" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.category",
+      "valueCodeableConcept" : {
+        "text" : "Patient Specified",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-statement-category",
+            "display" : "Patient Specified",
+            "code" : "patientspecified"
+          }
+        ]
+      }
+    }
+  ],
+  "resourceType" : "MedicationStatement"
+}

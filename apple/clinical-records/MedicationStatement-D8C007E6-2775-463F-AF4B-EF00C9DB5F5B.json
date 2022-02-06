@@ -1,0 +1,70 @@
+{
+  "status" : "completed",
+  "dosage" : [
+    {
+      "timing" : {
+        "code" : {
+          "text" : "continuous prn"
+        },
+        "repeat" : {
+          "boundsPeriod" : {
+            "start" : "2017-01-13T17:18:00Z",
+            "end" : "2017-01-13T19:02:13Z"
+          }
+        }
+      },
+      "asNeededBoolean" : true
+    }
+  ],
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "id" : "TfRC1JrQvsEGqvHgVzPggUJDgHlloMGpSniKlizt41BcB",
+  "effectivePeriod" : {
+    "start" : "2017-01-13T17:18:00Z",
+    "end" : "2017-01-13T19:02:13Z"
+  },
+  "medicationCodeableConcept" : {
+    "text" : "propofol (DIPRIVAN) infusion",
+    "coding" : [
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display" : "propofol (DIPRIVAN) infusion",
+        "code" : "1808234"
+      }
+    ]
+  },
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "250277957"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "250277957:0313856914"
+    }
+  ],
+  "informationSource" : {
+    "display" : "Jingping Wang, MD, PhD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/TBa4XQIHdtJ5ed0cC4rOTgQB"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.category",
+      "valueCodeableConcept" : {
+        "text" : "Inpatient",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-statement-category",
+            "display" : "Inpatient",
+            "code" : "inpatient"
+          }
+        ]
+      }
+    }
+  ],
+  "resourceType" : "MedicationStatement"
+}

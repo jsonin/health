@@ -1,0 +1,58 @@
+{
+  "status" : "final",
+  "category" : {
+    "text" : "Vital Signs",
+    "coding" : [
+      {
+        "system" : "http://hl7.org/fhir/observation-category",
+        "display" : "Vital Signs",
+        "code" : "vital-signs"
+      }
+    ]
+  },
+  "valueQuantity" : {
+    "code" : "Cel",
+    "value" : 36.9,
+    "system" : "http://unitsofmeasure.org",
+    "unit" : "Cel"
+  },
+  "id" : "TWHhs8IwKALHuhTGnI1rmqbukFopEgejIVBlY95IpbXMg.KbhpLprYmngM2CfAevDB",
+  "code" : {
+    "text" : "Temperature",
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "display" : "Body temperature",
+        "code" : "8310-5"
+      },
+      {
+        "system" : "http://loinc.org",
+        "display" : "Vital signs",
+        "code" : "8716-3"
+      }
+    ]
+  },
+  "subject" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "performer" : [
+    {
+      "display" : "Nurse Elizabeth A M",
+      "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/TWL10x-mwTCeo8aZYCJCbdAB"
+    }
+  ],
+  "effectiveDateTime" : "2017-01-13T15:50:00Z",
+  "extension" : [
+    {
+      "url" : "http://open.epic.com/FHIR/STU3/StructureDefinition/temperature-in-fahrenheit",
+      "valueQuantity" : {
+        "code" : "[degF]",
+        "value" : 98.4,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "[degF]"
+      }
+    }
+  ],
+  "resourceType" : "Observation"
+}

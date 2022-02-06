@@ -1,0 +1,94 @@
+{
+  "status" : "completed",
+  "dosage" : [
+    {
+      "asNeededBoolean" : false,
+      "timing" : {
+        "code" : {
+          "text" : "2 (two) times a day"
+        },
+        "repeat" : {
+          "period" : 1,
+          "periodUnits" : "d",
+          "frequency" : 2,
+          "boundsPeriod" : {
+            "start" : "2017-01-03",
+            "end" : "2017-01-14"
+          }
+        }
+      },
+      "method" : {
+        "text" : "Apply",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.798268.8600",
+            "display" : "Apply",
+            "code" : "1"
+          }
+        ]
+      },
+      "route" : {
+        "text" : "Topical",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.330",
+            "display" : "Topical",
+            "code" : "36"
+          }
+        ]
+      },
+      "text" : "Apply topically 2 (two) times a day. Apply to each nostril with clean q-tip twice daily  for 5 days prior to surgery and morning of surgery."
+    }
+  ],
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "id" : "TIByodK6OrwS3RvZR6AJC-g.vFpanw7HCrgbN.B8XRMkB",
+  "effectivePeriod" : {
+    "start" : "2017-01-03",
+    "end" : "2017-01-14"
+  },
+  "medicationCodeableConcept" : {
+    "text" : "mupirocin 2 % ointment",
+    "coding" : [
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display" : "mupirocin 2 % ointment",
+        "code" : "106346"
+      }
+    ]
+  },
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "233424234"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "233424234:2517966009"
+    }
+  ],
+  "informationSource" : {
+    "display" : "Kevin Anthony Kopko, MD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/Ttu79G6ywRLBLG5sDInu0AwB"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.category",
+      "valueCodeableConcept" : {
+        "text" : "Community",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-statement-category",
+            "display" : "Community",
+            "code" : "community"
+          }
+        ]
+      }
+    }
+  ],
+  "resourceType" : "MedicationStatement"
+}

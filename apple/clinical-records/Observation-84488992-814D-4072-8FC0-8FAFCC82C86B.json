@@ -1,0 +1,54 @@
+{
+  "status" : "final",
+  "category" : {
+    "text" : "Laboratory",
+    "coding" : [
+      {
+        "system" : "http://hl7.org/fhir/observation-category",
+        "display" : "Laboratory",
+        "code" : "laboratory"
+      }
+    ]
+  },
+  "issued" : "2017-01-14T10:20:54Z",
+  "id" : "T3mHtyd5TVntDOq6Rj4QzV6dwO0V1-p1o67WKKv9YQ00YqRfS5KMn40odZclivXBvB",
+  "code" : {
+    "text" : "CO2",
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "display" : "Carbon dioxide, total [Moles/volume] in Serum or Plasma",
+        "code" : "2028-9"
+      }
+    ]
+  },
+  "valueQuantity" : {
+    "code" : "mmol/L",
+    "value" : 22,
+    "system" : "http://unitsofmeasure.org",
+    "unit" : "mmol/L"
+  },
+  "subject" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "referenceRange" : [
+    {
+      "low" : {
+        "code" : "mmol/L",
+        "value" : 23,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mmol/L"
+      },
+      "high" : {
+        "code" : "mmol/L",
+        "value" : 32,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mmol/L"
+      },
+      "text" : "23 - 32 mmol/L"
+    }
+  ],
+  "effectiveDateTime" : "2017-01-14T09:15:00Z",
+  "resourceType" : "Observation"
+}

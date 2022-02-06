@@ -1,0 +1,54 @@
+{
+  "status" : "final",
+  "category" : {
+    "text" : "Laboratory",
+    "coding" : [
+      {
+        "system" : "http://hl7.org/fhir/observation-category",
+        "display" : "Laboratory",
+        "code" : "laboratory"
+      }
+    ]
+  },
+  "issued" : "2017-01-14T10:20:54Z",
+  "id" : "T3mHtyd5TVntDOq6Rj4QzV21EjKta.lzkAh.tr1VzIRhztsY-7j4xfSRJ9tVs9OGrB",
+  "code" : {
+    "text" : "GLUCOSE",
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "display" : "Glucose [Mass/volume] in Serum or Plasma",
+        "code" : "2345-7"
+      }
+    ]
+  },
+  "valueQuantity" : {
+    "code" : "mg/dL",
+    "value" : 138,
+    "system" : "http://unitsofmeasure.org",
+    "unit" : "mg/dL"
+  },
+  "subject" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "referenceRange" : [
+    {
+      "low" : {
+        "code" : "mg/dL",
+        "value" : 70,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mg/dL"
+      },
+      "high" : {
+        "code" : "mg/dL",
+        "value" : 110,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "mg/dL"
+      },
+      "text" : "70 - 110 mg/dL"
+    }
+  ],
+  "effectiveDateTime" : "2017-01-14T09:15:00Z",
+  "resourceType" : "Observation"
+}

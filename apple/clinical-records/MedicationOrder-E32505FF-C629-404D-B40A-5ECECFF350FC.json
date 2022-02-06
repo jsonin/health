@@ -1,0 +1,158 @@
+{
+  "id" : "T..MvBoLX3pfx3QkaCDsMRhGcMSv0U2yuGXbYrab0U5IB",
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "resourceType" : "MedicationOrder",
+  "contained" : [
+    {
+      "code" : {
+        "text" : "OXYCODONE 5 MG TABLET",
+        "coding" : [
+          {
+            "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display" : "OXYCODONE 5 MG TABLET",
+            "code" : "1049621"
+          }
+        ]
+      },
+      "id" : "T0Nx.stz5lr1TDtv8PKAKwgB",
+      "resourceType" : "Medication",
+      "product" : {
+        "form" : {
+          "text" : "Tablet",
+          "coding" : [
+            {
+              "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.310",
+              "display" : "Tablet",
+              "code" : "81"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "dateWritten" : "2017-01-13",
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "250252237"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "250252237:0777348830"
+    }
+  ],
+  "reasonEnded" : {
+    "text" : "Patient Discharge",
+    "coding" : [
+      {
+        "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.798268.7074",
+        "display" : "Patient Discharge",
+        "code" : "18"
+      }
+    ]
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.category",
+      "valueCodeableConcept" : {
+        "text" : "Inpatient",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-request-category",
+            "display" : "Inpatient",
+            "code" : "inpatient"
+          }
+        ]
+      }
+    }
+  ],
+  "dosageInstruction" : [
+    {
+      "asNeededBoolean" : true,
+      "timing" : {
+        "code" : {
+          "text" : "every 4 (four) hours as needed"
+        },
+        "repeat" : {
+          "frequency" : 1,
+          "period" : 4,
+          "periodUnits" : "h",
+          "boundsPeriod" : {
+            "start" : "2017-01-13T22:43:02Z",
+            "end" : "2017-01-15T01:05:19Z"
+          }
+        }
+      },
+      "doseRange" : {
+        "low" : {
+          "code" : "mg",
+          "value" : 5,
+          "system" : "http://unitsofmeasure.org",
+          "unit" : "mg"
+        },
+        "high" : {
+          "code" : "mg",
+          "value" : 10,
+          "system" : "http://unitsofmeasure.org",
+          "unit" : "mg"
+        }
+      },
+      "route" : {
+        "text" : "Oral",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.330",
+            "display" : "Oral",
+            "code" : "15"
+          }
+        ]
+      },
+      "extension" : [
+        {
+          "url" : "https://open.epic.com/fhir/extensions/ordered-dose",
+          "valueRange" : {
+            "low" : {
+              "code" : "mg",
+              "value" : 5,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "mg"
+            },
+            "high" : {
+              "code" : "mg",
+              "value" : 10,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "mg"
+            }
+          }
+        },
+        {
+          "url" : "https://open.epic.com/fhir/extensions/admin-amount",
+          "valueRange" : {
+            "low" : {
+              "value" : 1,
+              "unit" : "tablet"
+            },
+            "high" : {
+              "value" : 2,
+              "unit" : "tablet"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "prescriber" : {
+    "display" : "Kevin Anthony Kopko, MD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/Ttu79G6ywRLBLG5sDInu0AwB"
+  },
+  "status" : "stopped",
+  "medicationReference" : {
+    "display" : "oxyCODONE",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Medication/T0Nx.stz5lr1TDtv8PKAKwgB"
+  }
+}

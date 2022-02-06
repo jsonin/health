@@ -1,0 +1,109 @@
+{
+  "status" : "completed",
+  "dosage" : [
+    {
+      "asNeededBoolean" : false,
+      "timing" : {
+        "code" : {
+          "text" : "every 8 (eight) hours"
+        },
+        "repeat" : {
+          "period" : 8,
+          "periodUnits" : "h",
+          "frequency" : 1,
+          "boundsPeriod" : {
+            "start" : "2017-01-14T01:00:00Z",
+            "end" : "2017-01-14T09:05:00Z"
+          }
+        }
+      },
+      "quantityQuantity" : {
+        "code" : "g",
+        "value" : 2,
+        "system" : "http://unitsofmeasure.org",
+        "unit" : "g"
+      },
+      "route" : {
+        "text" : "Intravenous",
+        "coding" : [
+          {
+            "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.698288.330",
+            "display" : "Intravenous",
+            "code" : "11"
+          }
+        ]
+      },
+      "extension" : [
+        {
+          "url" : "https://open.epic.com/fhir/extensions/ordered-dose",
+          "valueQuantity" : {
+            "code" : "g",
+            "value" : 2,
+            "system" : "http://unitsofmeasure.org",
+            "unit" : "g"
+          }
+        },
+        {
+          "url" : "https://open.epic.com/fhir/extensions/admin-amount",
+          "valueQuantity" : {
+            "code" : "mL",
+            "value" : 50,
+            "system" : "http://unitsofmeasure.org",
+            "unit" : "mL"
+          }
+        }
+      ]
+    }
+  ],
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "id" : "Tu-PqQQ02rx0095VTzbcccD8n0hYD8CiJYa-OQB6etskB",
+  "effectivePeriod" : {
+    "start" : "2017-01-14T01:00:00Z",
+    "end" : "2017-01-14T09:05:00Z"
+  },
+  "medicationCodeableConcept" : {
+    "text" : "ceFAZolin",
+    "coding" : [
+      {
+        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display" : "ceFAZolin",
+        "code" : "1665060"
+      }
+    ]
+  },
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "250252243"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "250252243:0709105521"
+    }
+  ],
+  "informationSource" : {
+    "display" : "Kevin Anthony Kopko, MD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/Ttu79G6ywRLBLG5sDInu0AwB"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.category",
+      "valueCodeableConcept" : {
+        "text" : "Inpatient",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-statement-category",
+            "display" : "Inpatient",
+            "code" : "inpatient"
+          }
+        ]
+      }
+    }
+  ],
+  "resourceType" : "MedicationStatement"
+}

@@ -1,0 +1,86 @@
+{
+  "id" : "T1PMMNZfIsHnSlWcF9VXeaUElDLxX.raQYG-UYCbk.o0B",
+  "patient" : {
+    "display" : "Juhan Sonin",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Patient/TGyIpn8ERQAg2YvTOmM0fCBtPBVXuQ1uH3c9ZCopKGwQB"
+  },
+  "resourceType" : "MedicationOrder",
+  "contained" : [
+    {
+      "code" : {
+        "text" : "OSM_MULTI-MODAL INJECTION FOR JOINT REPLACEMENT (MGH)"
+      },
+      "id" : "T-bwIDwloZL1QFXwYMYEf54tM6sxYHiibmmaQL-V9XswB",
+      "resourceType" : "Medication",
+      "product" : {
+
+      }
+    }
+  ],
+  "dateWritten" : "2017-01-13",
+  "identifier" : [
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.2.798268",
+      "value" : "250277960"
+    },
+    {
+      "use" : "usual",
+      "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.3.798268.801",
+      "value" : "250277960:2611846264"
+    }
+  ],
+  "reasonEnded" : {
+    "text" : "Patient Discharge",
+    "coding" : [
+      {
+        "system" : "urn:oid:1.2.840.114350.1.13.362.2.7.4.798268.7074",
+        "display" : "Patient Discharge",
+        "code" : "18"
+      }
+    ]
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.category",
+      "valueCodeableConcept" : {
+        "text" : "Inpatient",
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/medication-request-category",
+            "display" : "Inpatient",
+            "code" : "inpatient"
+          }
+        ]
+      }
+    }
+  ],
+  "dosageInstruction" : [
+    {
+      "timing" : {
+        "code" : {
+          "text" : "as needed"
+        },
+        "repeat" : {
+          "frequency" : 1,
+          "period" : 1,
+          "periodUnits" : "d",
+          "boundsPeriod" : {
+            "start" : "2017-01-13T17:23:00Z",
+            "end" : "2017-01-13T18:47:57Z"
+          }
+        }
+      },
+      "asNeededBoolean" : true
+    }
+  ],
+  "prescriber" : {
+    "display" : "Young-Min Kwon, MBBS, PhD",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Practitioner/ThvbKAXGNMKZ2RFBhX0fsAQB"
+  },
+  "status" : "stopped",
+  "medicationReference" : {
+    "display" : "ropi 0.5% (60mL)-ketorolac (30mg)-epi (1mg)-cloNIDine (80mcg) in NS 87mL OSM_Mix",
+    "reference" : "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/DSTU2/Medication/T-bwIDwloZL1QFXwYMYEf54tM6sxYHiibmmaQL-V9XswB"
+  }
+}
